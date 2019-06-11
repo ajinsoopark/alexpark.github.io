@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css?family=Tajawal&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Didact+Gothic&display=swap');
+
+.navBarContainer {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+    min-height: 100vh;
+    width: 18%;
+    background-color: #9FB1BC;
+    position: fixed;
+    padding-left: 2.5%;
+    padding-right: 2.5%;
+    box-shadow: 1px 1px 2px 0 rgb(66, 66, 66);
+}
+
+.homeLink {
+    padding-bottom: 4%;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    font-family: Didact Gothic;
+}
+
+.navLinks {
+    display: flex;
+    flex-direction: column;
+    height: 12vh;
+    justify-content: space-between;
+    font-size: 1.2em;
+}
+
+.navBarContainer p {
+    text-align: right;
+}
+
+.intro {
+    margin-bottom: 2%;
+    line-height: 3vh;
+    font-family: Didact Gothic;
+    /* font-style: italic; */
+    font-size: 1.1em;
+    margin-bottom: 25%;
+}
+
+.contactsContainer {
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 38vh;
+}
+
+.contactsContainer svg:hover {
+    fill: rgb(80, 80, 80);
+}
+
+.link {
+    text-align: right;
+}
+
+.homeLink {
+    color: black;
+    font-size: 7em;
+    font-weight: bold;
+    text-align: center;
+    font-family: Tajawal;
+}
+
+.bottomBorder1 {
+    position: relative;
+    left: 14.2vw;
+    height: 2px;
+    width: 21%;
+    background: #E2C044;
+    transform: scaleX(0);
+    transform-origin: 0 0;
+    transition: all .5s ease;
+}
+
+.about:hover ~ .bottomBorder1 {
+    transform: scaleX(1)
+}
+
+.bottomBorder2 {
+    position: relative;
+    left: 13.01vw;
+    height: 2px;
+    width: 28%;
+    background: #E2C044;
+    transform: scaleX(0);
+    transform-origin: 0 0;
+    transition: all .5s ease;
+}
+
+.projects:hover ~ .bottomBorder2 {
+    transform: scaleX(1)
+}
+
+.bottomBorder3 {
+    position: relative;
+    left: 12.9vw;
+    height: 2px;
+    width: 27.9%;
+    background: #E2C044;
+    transform: scaleX(0);
+    transform-origin: 0 0;
+    transition: all .5s ease;
+}
+
+.resume:hover ~ .bottomBorder3 {
+    transform: scaleX(1);
+}
+
+.active {
+    transform: scaleX(1);
+}

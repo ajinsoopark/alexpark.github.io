@@ -1,0 +1,97 @@
+.projectsContainer h2 {
+    font-family: Tajawal;
+}
+
+.previewsContainer {
+    display: flex;
+    justify-content: start;
+}
+
+.projectImageContainer {
+    width: calc(50% - 3rem);
+    max-height: 33vh;
+    height: 100%;
+    position: relative;
+}
+
+.projectImage {
+    position: absolute;
+    box-shadow: 1px 1px 3px 1px rgb(66, 66, 66);
+    width: 100%;
+}
+
+.projectOverlay {
+    width: calc(50% - 3rem);
+    background-color: white;  
+    box-shadow: 1px 1px 3px 1px rgb(66, 66, 66);
+    /* top: 0; 
+    left: 0; */
+    position: absolute;
+    font-size: 1.2em;
+    text-overflow: clip;
+    overflow: hidden;
+}
+
+.projectOverlay {
+    opacity: 0;
+    transition: all 0.3s ease;
+    z-index: 10;
+    padding: 2%;
+    width: 96%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-top: 5.5%;
+}
+
+.projectImage:hover ~ .projectOverlay {
+    opacity: 0.99;
+    transition: all 0.3s ease;
+}
+
+.liveGitLinks {
+    display: flex;
+    justify-content: space-between;
+}
+
+.gitLink {
+    padding-right: 4%;
+}
+
+.liveLink {
+    padding-left: 4%;
+}
+
+.projectOverlay:hover {
+    opacity: 0.9;
+    transition: all 0.3s ease;
+}
+
+.appLink {
+    color: #E2C044;
+}
+
+.appLink:hover {
+    text-decoration: underline;
+}
+
+.appName {
+    margin-top: 0;
+    margin-bottom: 4.77%;
+    font-family: Tajawal;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.appInfo {
+    margin-bottom: 4.77%;
+    margin-top: 0;
+    font-family: Didact Gothic;
+}
+
+.stack {
+    margin-bottom: 4.77%;
+    margin-top: 4.77%;
+    font-family: Didact Gothic;
+    color: #9FB1BC;
+}
