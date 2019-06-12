@@ -1,6 +1,5 @@
 import React, { Component } from 'react'
 import { Switch, Route } from 'react-router-dom'
-import { withRouter } from 'react-router-dom'
 import Home from './Components/Home/home'
 import AboutMe from './Components/AboutMe/aboutMe'
 import Projects from './Components/Projects/projects'
