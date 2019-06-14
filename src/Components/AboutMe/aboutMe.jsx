@@ -71,7 +71,7 @@ class AboutMe extends Component {
                 <p className='me4'>
                     Coding allows me to combine these skills with my passion for tech, and I enjoy that.
                 </p>
-
+                <span className='spacer'></span>
                 <div className='skillContainer'>
                     <h2>Skills</h2>
                     <div className='icons'>

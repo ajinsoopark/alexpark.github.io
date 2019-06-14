@@ -17,17 +17,13 @@ class NavBar extends Component {
         console.log(path)
         return (
             <div className='navBarContainer'>
-                <NavLink className='homeLink' to={'/'}>ap</NavLink>
-                <div className='quoteContent'>
-                    <p className='intro'>Alex Park. Korean-American, born and Raised in Queens, New York.</p>
-                </div>
-                <div className='navLinks'>
-                    <NavLink className='about link' to={'/about'}>About</NavLink>
-                    <span className={`bottomBorder1 ${path === '/about' ? 'active' : ''}`}></span>
-                    <NavLink className='projects link' to={'/projects'}>Projects</NavLink>
-                    <span className={`bottomBorder2 ${path === '/projects' ? 'active' : ''}`}></span>
-                    <a className='resume link' href={Resume} target='_blank'>Resume</a>
-                    <span className={`bottomBorder3 ${path === '/resume' ? 'active' : ''}`}></span>
+                <div className='leftNav'>
+                    <NavLink className='homeLink' to={'/'}>Alex Park</NavLink>
+                    <div className='navLinks'>
+                        <NavLink className={`about link ${path === '/about' ? 'activeLink' : ''}`} to={'/about'}>About</NavLink>
+                        <NavLink className={`projects link ${path === '/projects' ? 'activeLink' : ''}`} to={'/projects'}>Projects</NavLink>
+                        <a className='resume link' href={Resume} target='_blank'>Resume</a>
+                    </div>
                 </div>
                 <Contacts/>
             </div>
