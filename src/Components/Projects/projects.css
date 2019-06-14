@@ -25,15 +25,21 @@
 }
 
 .projectOverlay {
-    width: calc(50% - 3rem);
+    width: calc(40% - 3rem);
     background-color: white;  
     box-shadow: 1px 1px 3px 1px rgb(66, 66, 66);
-    /* top: 0; 
-    left: 0; */
+    top: 0; 
+    left: 0;
     position: absolute;
-    font-size: 1.2em;
+    font-size: 1.61vw;
     text-overflow: clip;
     overflow: hidden;
+}
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+    .projectOverlay {
+        font-size: 1.2vw;
+    }
 }
 
 .projectOverlay {
