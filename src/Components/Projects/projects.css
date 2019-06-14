@@ -7,15 +7,19 @@
     justify-content: start;
 }
 
+.projectsContainer {
+    padding-top: 2%;
+}
+
 .projectImageContainer {
-    width: calc(50% - 3rem);
+    width: calc(40% - 3rem);
     max-height: 33vh;
     height: 100%;
     position: relative;
 }
 
 .projectImage {
-    position: absolute;
+    position: relative;
     box-shadow: 1px 1px 3px 1px rgb(66, 66, 66);
     width: 100%;
 }

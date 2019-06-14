@@ -13,19 +13,59 @@
 }
 
 .me4 {
-    padding-bottom: 8%;
+    padding-bottom: 5%;
 }
 
 .AboutContainer p {
     font-family: Didact Gothic;
     font-size: 1.2em;
+    width: auto;
+}
+
+@media only screen and (max-device-width : 480px) {
+    .AboutContainer p {
+        font-size: 1em;
+        margin-top: 0;
+    }
+    .contentContainer {
+        min-height: 100vh;
+    }
+
+    h2 {
+        font-size: 1em;
+        text-align: center;
+    }
+
+    .icons {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .App {
+        height: auto;
+    }
+
+    .skill {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        width: 15%;
+        justify-content: space-between;
+        padding-bottom: 2%;
+    }
 }
 
 .AboutContainer h2 {
     font-family: Tajawal;
 }
 
-.skillContainer {
-    /* background-color: white; */
+.spacer {
+    width: 80%;
+    background-color: aliceblue;
+    transform: scaleX(1);
 }
 
+.AboutContainer {
+    padding-top: 2%;
+}
