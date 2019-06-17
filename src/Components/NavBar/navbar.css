@@ -80,12 +80,17 @@ a {
     }
     .navLinks {
         font-size: 3vw;
-        width: 20vh;
+        width: 35vw;
+        padding-left: 5%;
     }
 
     .homeLink {
         font-size: 4vw;
         /* height: 15px; */
+    }
+
+    .contactsContainer {
+        width: 30vw;
     }
 
     .contactsContainer svg {

@@ -12,19 +12,6 @@
   height: 100%
 }
 
-@media only screen and (max-device-width : 1024px) and (max-device-height : 1366px) {
-  .contentContainer {
-    height: 95vh;
-  }
-}
-
-@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
-  .contentContainer {
-    height: auto;
-    padding-top: 10vw;
-  }
-}
-
 .firstLine {
   max-width: 38vw;
   font-family: Didact Gothic;
@@ -115,4 +102,24 @@
 
 @keyframes hidden3 {
   to { visibility: visible; }
+}
+
+@media only screen and (max-device-width : 1024px) and (max-device-height : 1366px) {
+  .contentContainer {
+    height: 95vh;
+  }
+}
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+  .contentContainer {
+    height: auto;
+    padding-top: 10vw;
+  }
+
+  .homeContainer {
+    height: 20vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
 }
