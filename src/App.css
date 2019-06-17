@@ -35,8 +35,8 @@
   font-size: 5vw;
   letter-spacing: .15em;
   animation: 
-    typing1 .8s steps(25, end),
-    blink-caret1 .75s step-end 2;
+    typing1 1s steps(25, end),
+    blink-caret1 .95s step-end 1;
 }
 
 .secondLine {
@@ -49,15 +49,14 @@
   font-size: 5vw;
   letter-spacing: .15em;
   animation: 
-    hidden2 0s 1.5s forwards,
-    typing2 1s steps(25, end) 2.2s 1 normal both,
-    blink-caret2 .75s step-end 5;
+    hidden2 0s 1s forwards,
+    typing2 1.2s steps(25, end) 1.3s 1 normal both,
+    blink-caret2 .95s step-end 2;
   visibility: hidden;
 }
 
 .thirdLine {
   max-width: 53vw;
-  animation-delay: 1s;
   font-family: Didact Gothic;
   overflow: hidden;
   border-right: .15em solid #F9DC5C;
@@ -66,9 +65,9 @@
   font-size: 5vw;
   letter-spacing: .15em;
   animation: 
-    hidden3 0s 4s forwards,
-    typing3 1.3s steps(30, end) 4s 1 normal both,
-    blink-caret3 .75s step-end infinite;
+    hidden3 0s 2.3s forwards,
+    typing3 1.3s steps(30, end) 2.2s 1 normal both,
+    blink-caret3 .95s step-end infinite;
   visibility: hidden;
 }
 
