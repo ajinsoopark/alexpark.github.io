@@ -56,7 +56,7 @@ a {
     font-family: Tajawal;
     padding-left: 2vw;
     white-space: nowrap;
-    height: 18px;
+    padding-top: 2%;
 }
 
 .activeLink {
