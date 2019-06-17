@@ -1,3 +1,7 @@
+body {
+  background-color: rgb(231, 228, 222);
+}
+
 .contentContainer {
   display: flex;
   justify-content: center;
