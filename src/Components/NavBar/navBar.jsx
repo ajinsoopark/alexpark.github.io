@@ -14,7 +14,6 @@ class NavBar extends Component {
 
     render () {
         const path = this.props.location.pathname
-        console.log(path)
         return (
             <div className='navBarContainer'>
                 <div className='leftNav'>

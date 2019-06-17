@@ -9,10 +9,11 @@
 
 .projectsContainer {
     padding-top: 2%;
+    width: 80%;
 }
 
 .projectImageContainer {
-    width: calc(40% - 3rem);
+    width: calc(50% - 3rem);
     max-height: 33vh;
     height: 100%;
     position: relative;
@@ -38,7 +39,7 @@
 
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
     .projectOverlay {
-        font-size: 2.45vw;
+        font-size: 3.32vw;
     }
 
     .previewsContainer {
@@ -48,7 +49,7 @@
     }
 
     .projectImageContainer {
-        width: calc(70% - 3rem);
+        width: calc(90% - 3rem);
     }
 }
 
