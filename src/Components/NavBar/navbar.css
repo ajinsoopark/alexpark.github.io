@@ -17,7 +17,6 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: center;
 }
 
 a {
@@ -32,11 +31,7 @@ a {
     justify-content: space-between;
     font-size: 1.55vw;
     width: 20vw;
-    padding-left: 10%
-}
-
-.navBarContainer p {
-    text-align: right;
+    padding-left: 10%;
 }
 
 .contactsContainer {
@@ -50,13 +45,13 @@ a {
 }
 
 .homeLink {
+    vertical-align: text-bottom;
     color: #F0F7EE;
     font-size: 2vw;
     font-weight: bold;
     font-family: Tajawal;
     padding-left: 2vw;
     white-space: nowrap;
-    padding-top: 2%;
 }
 
 .activeLink {
@@ -89,7 +84,7 @@ a {
 
     .homeLink {
         font-size: 4vw;
-        height: 15px;
+        /* height: 15px; */
     }
 
     .contactsContainer svg {
