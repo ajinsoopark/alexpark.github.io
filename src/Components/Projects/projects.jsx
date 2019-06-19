@@ -13,6 +13,13 @@ class Projects extends Component {
                 stack: 'React/Redux, Node.js, CSS3, PostGres',
                 liveLink: 'https://nextstep-pursuit.herokuapp.com/',
                 gitLink: 'https://github.com/ajinsoopark/Next-Step'
+            }, {
+                file: 'hikeMe',
+                appName: 'Hike Me',
+                info: 'Find a hiking trail, or walk in nature based on location.',
+                stack: 'React, Node.js, CSS3',
+                liveLink: 'https://hikeme.herokuapp.com/',
+                gitLink: 'https://github.com/ajinsoopark/HikeMe'
             }]
         }
     }

@@ -6,7 +6,6 @@ body {
   display: flex;
   justify-content: center;
   background-color: rgb(231, 228, 222);
-  height: 83.5vh;
   padding: 2vh;
   width: calc(100% - 4vh);
   padding-top: 8vw;
@@ -108,10 +107,8 @@ body {
   to { visibility: visible; }
 }
 
-@media only screen and (max-device-width : 1024px) and (max-device-height : 1366px) {
-  .contentContainer {
-    height: 95vh;
-  }
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+  
 }
 
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
