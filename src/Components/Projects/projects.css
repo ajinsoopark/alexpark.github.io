@@ -4,12 +4,16 @@
 
 .previewsContainer {
     display: flex;
-    justify-content: start;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    height: auto;
+    row-gap: 300px;
 }
 
 .projectsContainer {
     padding-top: 2%;
     width: 80%;
+    height: auto;
 }
 
 .projectImageContainer {
@@ -20,13 +24,12 @@
 }
 
 .projectImage {
-    position: relative;
     box-shadow: 1px 1px 3px 1px rgb(66, 66, 66);
     width: 100%;
 }
 
 .projectOverlay {
-    width: calc(40% - 3rem);
+    width: calc(45% - 3rem);
     background-color: white;  
     box-shadow: 1px 1px 3px 1px rgb(66, 66, 66);
     top: 0; 
@@ -37,26 +40,13 @@
     overflow: hidden;
 }
 
-@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
-    .projectOverlay {
-        font-size: 3.32vw;
-    }
-
-    .previewsContainer {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .projectImageContainer {
-        width: calc(90% - 3rem);
-    }
+.projectImageContainer:nth-child(1n+3) {
+    margin-top: 3vw;
 }
 
 .projectOverlay {
     opacity: 0;
     transition: all 0.3s ease;
-    z-index: 10;
     padding: 2%;
     width: 96%;
     display: flex;
@@ -101,13 +91,14 @@
     margin-bottom: 4.77%;
     font-family: Tajawal;
     font-weight: bold;
-    font-size: 1.2em;
+    font-size: 1.4em;
 }
 
 .appInfo {
     margin-bottom: 4.77%;
     margin-top: 0;
     font-family: Didact Gothic;
+    /* word-wrap: break-word; */
 }
 
 .stack {
@@ -115,4 +106,31 @@
     margin-top: 4.77%;
     font-family: Didact Gothic;
     color: #9FB1BC;
+}
+
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+    .projectOverlay {
+        height: 85%;
+    }
+}
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+    .projectOverlay {
+        font-size: 3vw;
+        width: 96.3%;
+    }
+
+    .previewsContainer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .projectImageContainer {
+        width: calc(90% - 3rem);
+    }
+    
+    .projectImageContainer:not(:first-child) {
+        margin-top: 10vw;
+    }
 }
